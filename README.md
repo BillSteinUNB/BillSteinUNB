@@ -1,18 +1,22 @@
-# Hi there, I'm Bill! 
+# Bill Stein
+### Software Engineer & 5th-Year Computer Science Student
 
-[![Update Stats](https://github.com/BillSteinUNB/BillSteinUNB/actions/workflows/update-contributions.yml/badge.svg)](https://github.com/BillSteinUNB/BillSteinUNB/actions/workflows/update-contributions.yml)
-
-Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes to solve problems.
+Building scalable applications and exploring the intersection of **Software Engineering** and **Machine Learning**.
 
 ---
 
 ## About Me
 
-- 🏋️ Currently working on **Gymmark** — a fitness tracking app built with Swift
-- 🧠 Learning **Machine Learning & AI Model Specificity**
-- 🤝 Looking to collaborate on **Machine Learning models** — open to just about anything
-- 📫 How to reach me: **[contact@billstein.dev](mailto:contact@billstein.dev)** | **[billsteincs.com](https://billsteincs.com)**
-- 🏊 Fun fact: I was a collegiate swimmer for 4 years
+- 🏋️ **Building Gymmark**, a fitness tracking application developed with Swift
+- 🤝 **Seeking collaborations** on Machine Learning projects and innovative software
+- 📫 **Contact me**: [contact@billstein.dev](mailto:contact@billstein.dev) | [billsteincs.com](https://billsteincs.com)
+- 🏊 **Fun fact**: I spent four years as a collegiate swimmer
+
+---
+
+## 📚 Currently Learning
+
+- Machine Learning & AI Model Specificity
 
 ---
 
@@ -64,15 +68,8 @@ Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes 
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats-three-silk-96.vercel.app/api?username=BillSteinUNB&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&cache=1766632402" alt="GitHub Stats" />
-</p>
-
----
-
-## Top Languages
-
-<p align="center">
-  <img src="https://github-readme-stats-three-silk-96.vercel.app/api/top-langs/?username=BillSteinUNB&layout=compact&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&cache=1766632402" alt="Top Languages" />
+  <img src="https://github-readme-stats-three-silk-96.vercel.app/api?username=BillSteinUNB&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&cache=1766632402" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats-three-silk-96.vercel.app/api/top-langs/?username=BillSteinUNB&layout=compact&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&cache=1766632402" alt="Top Languages" width="48%" />
 </p>
 
 ---
