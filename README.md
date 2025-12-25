@@ -2,26 +2,17 @@
 
 [![Update Stats](https://github.com/BillSteinUNB/BillSteinUNB/actions/workflows/update-contributions.yml/badge.svg)](https://github.com/BillSteinUNB/BillSteinUNB/actions/workflows/update-contributions.yml)
 
-## 📊 GitHub Activity
-
-- **Total Contributions (All Time):** 574
-
-<!-- last_updated starts -->
-*Last Updated: December 25, 2025 at 03:13 AM UTC*
-<!-- last_updated ends -->
-
 Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes to solve problems.
 
 ---
 
 ## About Me
 
-- Currently working on [Your Current Project]
-- Learning [What You're Learning]
-- Looking to collaborate on [Open Source / Interesting Projects]
-- Ask me about [Your Expertise Areas]
-- How to reach me: [Your Email or Social Links]
-- Fun fact: [Something Interesting About You]
+- 🏋️ Currently working on **Gymmark** — a fitness tracking app built with Swift
+- 🧠 Learning **Machine Learning & AI Model Specificity**
+- 🤝 Looking to collaborate on **Machine Learning models** — open to just about anything
+- 📫 How to reach me: **[contact@billstein.dev](mailto:contact@billstein.dev)** | **[billsteincs.com](https://billsteincs.com)**
+- 🏊 Fun fact: I was a collegiate swimmer for 4 years
 
 ---
 
@@ -57,12 +48,13 @@ Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes 
 ### Databases
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/-Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
 
 ### Tools & Platforms
 ![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![VS Code](https://img.shields.io/badge/-VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Cursor](https://img.shields.io/badge/-Cursor-000000?style=for-the-badge&logo=cursor&logoColor=white)
+![OpenCode](https://img.shields.io/badge/-OpenCode-4B32C3?style=for-the-badge&logo=terminal&logoColor=white)
 ![Xcode](https://img.shields.io/badge/-Xcode-147EFB?style=for-the-badge&logo=xcode&logoColor=white)
 ![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 ![Jira](https://img.shields.io/badge/-Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
@@ -72,7 +64,7 @@ Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes 
 ## GitHub Streak
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BillSteinUNB&theme=tokyonight&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=8B949E&cache=1766632402" alt="GitHub Streak" />
+  <img src="https://streak-stats.demolab.com/?user=BillSteinUNB&theme=tokyonight&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=8B949E" alt="GitHub Streak" />
 </p>
 
 ---
@@ -90,3 +82,13 @@ Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes 
 <p align="center">
   <img src="https://github-readme-stats-three-silk-96.vercel.app/api/top-langs/?username=BillSteinUNB&layout=compact&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&cache=1766632402" alt="Top Languages" />
 </p>
+
+---
+
+## 📊 GitHub Activity
+
+- **Total Contributions (All Time):** 574
+
+<!-- last_updated starts -->
+*Last Updated: December 25, 2025 at 03:13 AM UTC*
+<!-- last_updated ends -->

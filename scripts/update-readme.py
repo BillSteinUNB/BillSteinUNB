@@ -58,9 +58,9 @@ def update_readme():
         content
     )
     
-    # Update Streak Stats URLs
+    # Update Streak Stats URLs (demolab - current official host)
     content = re.sub(
-        r'https://github-readme-streak-stats\.herokuapp\.com/[^")\s]+',
+        r'https://streak-stats\.demolab\.com/[^")\s]+',
         add_cache_buster,
         content
     )
