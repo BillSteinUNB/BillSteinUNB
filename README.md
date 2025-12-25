@@ -1,8 +1,14 @@
 # Hi there, I'm Bill! 
 
+[![Update Stats](https://github.com/BillSteinUNB/BillSteinUNB/actions/workflows/update-contributions.yml/badge.svg)](https://github.com/BillSteinUNB/BillSteinUNB/actions/workflows/update-contributions.yml)
+
 ## 📊 GitHub Activity
 
 - **Total Contributions (All Time):** 570
+
+<!-- last_updated starts -->
+*Last Updated: December 25, 2025 at 03:03 AM UTC*
+<!-- last_updated ends -->
 
 Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes to solve problems.
 
@@ -66,7 +72,7 @@ Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes 
 ## GitHub Streak
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BillSteinUNB&theme=tokyonight&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=8B949E" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BillSteinUNB&theme=tokyonight&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=8B949E&cache=1766631786" alt="GitHub Streak" />
 </p>
 
 ---
@@ -74,7 +80,7 @@ Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes 
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats-three-silk-96.vercel.app/api?username=BillSteinUNB&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9" alt="GitHub Stats" />
+  <img src="https://github-readme-stats-three-silk-96.vercel.app/api?username=BillSteinUNB&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&cache=1766631786" alt="GitHub Stats" />
 </p>
 
 ---
@@ -82,6 +88,5 @@ Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes 
 ## Top Languages
 
 <p align="center">
-  <img src="https://github-readme-stats-three-silk-96.vercel.app/api/top-langs/?username=BillSteinUNB&layout=compact&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Top Languages" />
+  <img src="https://github-readme-stats-three-silk-96.vercel.app/api/top-langs/?username=BillSteinUNB&layout=compact&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&cache=1766631786" alt="Top Languages" />
 </p>
- 
