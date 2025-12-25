@@ -61,14 +61,6 @@ Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes 
 
 ---
 
-## GitHub Streak
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BillSteinUNB&theme=tokyonight&hide_border=true&background=0D1117&stroke=58A6FF&ring=58A6FF&fire=FF6B6B&currStreakLabel=C9D1D9&sideLabels=C9D1D9&currStreakNum=C9D1D9&sideNums=C9D1D9&dates=8B949E" alt="GitHub Streak" />
-</p>
-
----
-
 ## GitHub Stats
 
 <p align="center">
