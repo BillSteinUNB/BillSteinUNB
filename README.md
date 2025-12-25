@@ -4,6 +4,10 @@ Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes 
 
 ---
 
+## 📊 GitHub Activity
+
+- **Total Contributions (All Time):** 91
+
 ## About Me
 
 - Currently working on [Your Current Project]
