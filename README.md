@@ -1,5 +1,9 @@
 # Hi there, I'm Bill! 
 
+## 📊 GitHub Activity
+
+- **Total Contributions (All Time):** 569
+
 Welcome to my GitHub profile! I'm a 5th year Computer Science student who likes to solve problems.
 
 ---
