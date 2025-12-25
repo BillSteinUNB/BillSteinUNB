@@ -13,17 +13,15 @@ def count_contributions():
         "Accept": "application/vnd.github.v4.idl"
     }
     
-    # GraphQL query to get comprehensive contribution data
+    # GraphQL query to get the contribution calendar total
     query = """
     query($username: String!, $from: DateTime, $to: DateTime) {
       user(login: $username) {
         createdAt
         contributionsCollection(from: $from, to: $to) {
-          totalCommitContributions
-          totalPullRequestContributions
-          totalIssueContributions
-          totalPullRequestReviewContributions
-          totalRepositoryContributions
+          contributionCalendar {
+            totalContributions
+          }
         }
       }
     }
@@ -50,18 +48,14 @@ def count_contributions():
             
             user_data = data.get("data", {}).get("user", {})
             created_at = user_data.get("createdAt")
-            contributions = user_data.get("contributionsCollection", {})
             
-            total = (
-                contributions.get("totalCommitContributions", 0) +
-                contributions.get("totalPullRequestContributions", 0) +
-                contributions.get("totalIssueContributions", 0) +
-                contributions.get("totalPullRequestReviewContributions", 0) +
-                contributions.get("totalRepositoryContributions", 0)
-            )
+            # Use the calendar total which matches the profile graph exactly
+            calendar = user_data.get("contributionsCollection", {}).get("contributionCalendar", {})
+            total = calendar.get("totalContributions", 0)
+            
             return created_at, total
         else:
-            print(f"Error: {response.status_code}")
+            print(f"Error: {response.status_code} - {response.text}")
             return None, 0
 
     # 1. Get creation date and first year of contributions
