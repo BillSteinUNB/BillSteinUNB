@@ -11,7 +11,7 @@ def update_readme():
         return
     
     # Read README
-    with open("README.md", "r") as f:
+    with open("README.md", "r", encoding="utf-8") as f:
         content = f.read()
     
     # Pattern to find and replace the total contributions line
@@ -24,13 +24,13 @@ def update_readme():
         print(f"Updated existing total to {total_contributions}")
     else:
         # Add the section after the header
-        header_pattern = r'---\n\n## About Me'
-        replacement_section = f'---\n\n## 📊 GitHub Activity\n\n- **Total Contributions (All Time):** {total_contributions}\n\n## About Me'
+        header_pattern = r'# Hi there, I\'m Bill! \n\n'
+        replacement_section = f'# Hi there, I\'m Bill! \n\n## 📊 GitHub Activity\n\n- **Total Contributions (All Time):** {total_contributions}\n\n'
         updated_content = re.sub(header_pattern, replacement_section, content)
         print(f"Added new section with {total_contributions} contributions")
     
     # Write back
-    with open("README.md", "w") as f:
+    with open("README.md", "w", encoding="utf-8") as f:
         f.write(updated_content)
     
     print(f"README updated successfully")

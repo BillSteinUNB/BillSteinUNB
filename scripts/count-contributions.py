@@ -15,67 +15,96 @@ def count_contributions():
     
     # GraphQL query to get comprehensive contribution data
     query = """
-    query($username: String!) {
+    query($username: String!, $from: DateTime, $to: DateTime) {
       user(login: $username) {
-        contributionsCollection {
+        createdAt
+        contributionsCollection(from: $from, to: $to) {
           totalCommitContributions
           totalPullRequestContributions
           totalIssueContributions
           totalPullRequestReviewContributions
           totalRepositoryContributions
-          commitContributionsByRepository {
-            repository {
-              nameWithOwner
-            }
-            contributions {
-              totalCount
-            }
-          }
         }
       }
     }
     """
     
-    # Get data from the last year
-    from_date = (datetime.now() - timedelta(days=365)).isoformat()
-    to_date = datetime.now().isoformat()
-    
-    variables = {
-        "username": username,
-        "from": from_date,
-        "to": to_date
-    }
-    
-    response = requests.post(
-        "https://api.github.com/graphql",
-        json={"query": query, "variables": variables},
-        headers=headers
-    )
-    
-    if response.status_code == 200:
-        data = response.json()
-        user_data = data.get("data", {}).get("user", {})
-        contributions = user_data.get("contributionsCollection", {})
+    def get_contributions_for_range(start_date, end_date):
+        variables = {
+            "username": username,
+            "from": start_date,
+            "to": end_date
+        }
         
-        # Calculate comprehensive total
-        total_contributions = (
-            contributions.get("totalCommitContributions", 0) +
-            contributions.get("totalPullRequestContributions", 0) +
-            contributions.get("totalIssueContributions", 0) +
-            contributions.get("totalPullRequestReviewContributions", 0) +
-            contributions.get("totalRepositoryContributions", 0)
+        response = requests.post(
+            "https://api.github.com/graphql",
+            json={"query": query, "variables": variables},
+            headers=headers
         )
         
-        # Save to file for the update script
-        with open("total_contributions.txt", "w") as f:
-            f.write(str(total_contributions))
-        
-        print(f"Total contributions counted: {total_contributions}")
-        return total_contributions
-    else:
-        print(f"Error: {response.status_code}")
-        print(response.text)
+        if response.status_code == 200:
+            data = response.json()
+            if "errors" in data:
+                print(f"GraphQL Errors: {data['errors']}")
+                return None, 0
+            
+            user_data = data.get("data", {}).get("user", {})
+            created_at = user_data.get("createdAt")
+            contributions = user_data.get("contributionsCollection", {})
+            
+            total = (
+                contributions.get("totalCommitContributions", 0) +
+                contributions.get("totalPullRequestContributions", 0) +
+                contributions.get("totalIssueContributions", 0) +
+                contributions.get("totalPullRequestReviewContributions", 0) +
+                contributions.get("totalRepositoryContributions", 0)
+            )
+            return created_at, total
+        else:
+            print(f"Error: {response.status_code}")
+            return None, 0
+
+    # 1. Get creation date and first year of contributions
+    now = datetime.now()
+    created_at_str, _ = get_contributions_for_range(
+        (now - timedelta(days=1)).isoformat(), 
+        now.isoformat()
+    )
+    
+    if not created_at_str:
+        print("Failed to fetch user creation date.")
         return 0
+
+    created_at = datetime.strptime(created_at_str, "%Y-%m-%dT%H:%M:%SZ")
+    total_all_time = 0
+    
+    # 2. Iterate through each year from creation until now
+    current_year = created_at.year
+    while current_year <= now.year:
+        start_of_year = datetime(current_year, 1, 1)
+        end_of_year = datetime(current_year, 12, 31, 23, 59, 59)
+        
+        # Adjust start/end for first and last years
+        if current_year == created_at.year:
+            start_of_year = created_at
+        if current_year == now.year:
+            end_of_year = now
+            
+        _, yearly_total = get_contributions_for_range(
+            start_of_year.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            end_of_year.strftime("%Y-%m-%dT%H:%M:%SZ")
+        )
+        
+        print(f"Year {current_year}: {yearly_total} contributions")
+        total_all_time += yearly_total
+        current_year += 1
+        
+    # Save to file for the update script
+    with open("total_contributions.txt", "w") as f:
+        f.write(str(total_all_time))
+    
+    print(f"Final total contributions (All Time): {total_all_time}")
+    return total_all_time
 
 if __name__ == "__main__":
     count_contributions()

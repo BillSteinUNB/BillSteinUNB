@@ -25,12 +25,12 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests PyGithub
+          pip install requests
       
       - name: Count total contributions
         run: python scripts/count-contributions.py
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.CONTRIBUTIONS_PAT }}
       
       - name: Update README
         run: python scripts/update-readme.py
