@@ -68,16 +68,16 @@ Building scalable applications and exploring the intersection of **Software Engi
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats-three-silk-96.vercel.app/api?username=BillSteinUNB&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&cache=1769134980" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats-three-silk-96.vercel.app/api/top-langs/?username=BillSteinUNB&layout=compact&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&cache=1769134980" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats-three-silk-96.vercel.app/api?username=BillSteinUNB&show_icons=true&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=58A6FF&text_color=C9D1D9&cache=1769221108" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats-three-silk-96.vercel.app/api/top-langs/?username=BillSteinUNB&layout=compact&count_private=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&cache=1769221108" alt="Top Languages" width="48%" />
 </p>
 
 ---
 
 ## 📊 GitHub Activity
 
-- **Total Contributions (All Time):** 1338
+- **Total Contributions (All Time):** 1343
 
 <!-- last_updated starts -->
-*Last Updated: January 23, 2026 at 02:23 AM UTC*
+*Last Updated: January 24, 2026 at 02:18 AM UTC*
 <!-- last_updated ends -->
